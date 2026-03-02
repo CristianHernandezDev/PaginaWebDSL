@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- hace que sea responsivo -->
+  <title>DSL</title> 
+  <!-- Tipografias -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Enlaces a archivos internos-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/cajaTexto.js" defer></script>
+  <script src="js/reproducciónVideo.js" defer></script>
+  <script src="js/menuSandwitch.js" defer></script>
+  <script src="js/seleccionSeccion.js" defer></script>
+  <script src="js/nodal.js" defer></script>
+    <!-- Carrouseles de imagenes y videos-->
+  <script src="js/carrouselImagenesHorizontal.js" defer></script>
+  <script src="js/carrouselVideosVerticales.js" defer></script>
+  <script src="js/carrouselVideosVerticalesClases.js" defer></script>
+  <script src="js/carrouselVideosHorizontalVisitas.js" defer></script>
+    <script src="js/carrouselImagenesClases.js" defer></script>
+
+</head>
+<body>
+  <!-- Aquí va todo el contenido visible de la página -->
+    <header class="banner">
+    <div class="logo">
+        <img src="assets/logoN-B.jpeg" alt="logo de DSL">
+    </div>
+    <h1>David Sombra Luna - Mecánico automotriz</h1>
+    </header>
+
+    <nav class="menu" id="mainMenu">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#curso">Curso</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#ubicacion">Ubicaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    <!-- Sección inicio -->
+    <section id="inicio">
+      <h2>Bienvenido al mundo de la mecanica automotriz</h2>
+      <p><br><br>Me presento, mucho gusto mi nombre es David Sombra Luna, mecánico automotriz con mas de 15 años de experiencia, ¿Estas interesado o interasada en saber como realizar un mantenimiento basico a tu automovil o quieres adentrarte en el basto mundo de la mecanica automotriz?
+        Pues dejame decirte que estas en el lugar correcto. En esta pagina podras encontrar información acerca de un cursos que imparto personalmente, con horarios y dias accesibles para aprender con comodidad y a un precio economico.
+        <br><br>Este es un proyecto personal que inicie en 2025 y 
+        con ayuda de los alumnos, esto se esta haciendo algo muy gratificante para mi. En las demas secciones, conoceras información para motivarte a ser parte de este proyecto y con mi ayuda, tu tambien podras lograr esa meta de conocer este mundo de lo que es la mecanica automotriz. </p>
+    </section>
+
+    <!-- Sección información sobre curso -->
+    <section id="curso">
+      <h2>Curso de Mécanica Basica Automotriz - Conoce un auto desde cero</h2>
+        <p><span class="negritas"><br>¿Quieres aprender cómo funciona tu automovil y realizar mantenimientos sencillos por tu cuenta o quieres enbarcarte en el mundo de la mecanica automotriz basica?</span>
+        <br><br>En el curso de mecánica basica descubriras y aprenderas:
+        <div class="txtResaltado">
+            <p><span class="negritas">Los sistemas que conforman un automovil:</span> sistema eléctrico, sistema de arranque, sistema de suspensión, sistema de enfriamiento, sistema de escape, sistema de combustión, sistema de freno, sistema de lubricación, sistema de admisión.</p>
+            <p><span class="negritas">Los elementos que conforman dichos sistemas:</span> entendiendo su función y como se relacionan entre sí para que el vehiculo funcione correctamente.</p>
+            <p><span class="negritas">Herramientas de mecánica automotriz basicas:</span> conoceras y aprenderas como utilizar las herramientas necesarias para realizar mantenimientos basicos y no tan basicos, desde cambio de filtro de aire hasta cambio de balatas, por mencionar ejemplos.</p>
+            <p><span class="negritas">Medidas de seguridad:</span> la seguridad es primero, y en este curso se enseña a como se debe realizar el mantenimiento de manera segura y eficas.</p>
+        </div>
+        <p>Este curso está diseñado principalmente para personas principiantes en este gran mundo de la mecanica automotriz, que quieran adentrarse en conocer su auto e incluso que mas adelante quieran dedicarse en convertirse en un gran mecánico. El curso se enfoca en
+        explicaciones claras y ejemplos prácticos que te ayudaran a identificar cada componente y comprender su importancia. AL finalizar, tendras la confianza para conocer problemas comunes y aplicar soluciones básicas de manera segura.</p>
+        
+
+        <div class="contenedorAuto">
+            <img src="assets/auto.jpeg" alt="imagen_de_auto_y_sus_partes" class="auto-img">
+
+            <span class="label bateria">
+                Batería
+                <span class="tooltip">
+                    Se encarga de transformar energía quimica en energia electrica.
+                    <br><strong>Sistema al que pertenece:</strong> Eléctrico.
+                </span>
+            </span>
+
+            <span class="label admision">
+                S. Admisión
+                <span class="tooltip">
+                    Es el conjunto de elementos que permite la entrada de aire limpio al motor, regulando su cantidad y condiciones para la combustión.
+                    <br><strong>Elementos:</strong> filtro de aire, cuerpo de aceleración, sensor de flujo de aire (MAF), multiple de admisión.
+                </span>
+            </span>
+
+            <span class="label lubricacion">
+                S. Lubricación
+                <span class="tooltip">
+                    Es el conjunto de componentes que distribuye aceite por el motor para reducir la fricción entre piezas metálicas, evitar el desgaste y mantener la temperatura adecuada.
+                    <br><strong>Elementos:</strong> bomba de aceite, filtro, cárter y conductos .
+                </span>
+            </span>
+
+            <span class="label suspension">
+                S. Suspensión
+                <span class="tooltip">
+                    Conjunto de componentes que mantienen la estabilidad y mejoran la comodidad de conducción, ademas de absorber impactos del camino.
+                    <br><strong>Elementos</strong> amortiguadores, resortes y brazos.
+                </span>
+            </span>
+        
+            <span class="label radiador">
+                Radiador
+                <span class="tooltip">
+                    Disipa el calor del motor mediante el líquido refrigerante, evitando el sobrecalentamiento y asegurando un funcionamiento estable.
+                    <br><strong>Sistema al que pertenece:</strong> Enfriamiento.
+                </span>
+            </span>
+
+            <span class="label frenos">
+                S. Frenos
+                <span class="tooltip">
+                    Es el mecanismo encargado de disminuir la velocidad o detener el vehículo. Funciona transformando la energía cinética en calor.  
+                    <br><strong>Elementos:</strong> discos, pastillas, calipers, lineas de liquido de frenos.
+                </span>
+            </span>
+
+            <span class="label escape">
+                S. Escape
+                <span class="tooltip">
+                    Se encarga de conducir los gases quemados del motor hacia el exterior, reduciendo el ruido producido en la combustión y controlando las emisiones contaminantes.
+                <br><strong>Elementos:</strong> resonador, silenciador, mofle, sensor de oxigeno, multiple de escape.
+                </span>
+            </span>
+
+            <span class="label neumatico">
+                Neumático
+                <span class="tooltip">
+                    Es parte esencial para el movimiento correcto de un auto.  
+                    <br><strong>Sistema:</strong> Suspención y rodaje.
+                </span>
+            </span>
+        </div>
+
+    </section>
+
+    <!-- Sección galeria -->
+    <section id="galeria">
+
+      <h2>Practicas en clase</h2>
+        <p><br>Durante el curso, se realizan practicas en automoviles de compañeros o propios a consideración de los alumnos, esto con el fin de que los alumnos
+        se atrevan de poco a poco a realizar mantenimiento y asi aprendan tanto lo teorico como practico, ademas de apoyar a los alumnos en el mantenimiento de su automovil.
+        Todo esto diagnosticado y supervisado por un mecanico automotriz profesional con las medidas de seguridad necesarias.
+        <br></p>
+        <!-- Carrousel de videos de practica verticales -->
+        <div class="galeriaVideos1V">
+            <div class="Vertical-VideosClases">
+                <div class="carouselVClases">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-trackVClases">
+                        <div class="videoConTitulo">
+                            <h3>Medición de Voltaje</h3>
+                            <video class="video" controls>
+                                <source src="assets/mediciónVoltaje.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Remp. Tapa de punterias</h3>
+                            <video class="video" controls>
+                                <source src="assets/remplazoTapaPunteriaYValvulaPSB.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Remplazo de bujias</h3>
+                            <video class="video" controls>
+                                <source src="assets/remplazoBujias.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Funcionamiento de bobina</h3>
+                            <video class="video" controls>
+                                <source src="assets/funcionamientoBobina.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Diagnostico de termostato</h3>
+                            <video class="video" controls>
+                                <source src="assets/diagnosticoTermostato.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Diagnostico y Remp. de Bomba de agua</h3>
+                            <video class="video" controls>
+                                <source src="assets/diagnosticoRemplazoBombaAgua.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Remp. de suspensión</h3>
+                            <video class="video" controls>
+                                <source src="assets/remplazoSuspension.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Diagnostico de radiador</h3>
+                            <video class="video" controls>
+                                <source src="assets/diagnosticoRadiador.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Inspección visual</h3>
+                            <video class="video" controls>
+                                <source src="assets/inspecciónVisual.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Prueba de compresión de cilindros</h3>
+                            <video class="video" controls>
+                                <source src="assets/pruebaCompresionCilindro.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Mant. correctivo de Bobinas 1</h3>
+                            <video class="video" controls>
+                                <source src="assets/mantenimientoCorrectivoBobinas1.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Mant. correctivo de Bobinas 2</h3>
+                            <video class="video" controls>
+                                <source src="assets/mantenimientoCorrectivoBobinas2.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Diagnostico disco</h3>
+                            <video class="video" controls>
+                                <source src="assets/diagnosticoDiscoBalatas.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                        <div class="videoConTitulo">
+                            <h3>Rectificado-Torneado de disco</h3>
+                            <video class="video" controls>
+                                <source src="assets/rectificado-torneadoDisco.mp4" type="video/mp4"> 
+                            </video>
+                        </div>                        <div class="videoConTitulo">
+                            <h3>Remplazo de suspensión</h3>
+                            <video class="video" controls>
+                                <source src="assets/remplazoDeSuspencion.mp4" type="video/mp4"> 
+                            </video>
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="galeriaImagenes1">
+            <div class="Imagenes-clases">
+                <div class="carouselImagenesClases">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-trackImagenesClases">
+                        <div class="imagenConTitulo">
+                            <h3>Clase de Bobinas</h3>
+                            <img class="abrirModal" src="assets/claseBobinas.jpeg" alt="Imagen 1">
+                        </div>
+                        <div class="imagenConTitulo">
+                            <h3>Clase de tipos de humo</h3>
+                            <img class="abrirModal" src="assets/claseExpulsionHumo.jpeg" alt="Imagen 1">
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>Contamos con visitas a empresas</h2>
+        <p><br>Durante el transcurso del curso, se realiza una visita a una empresa profesional con servicio de mantenimiento para autos donde podras ver de primera mano como es el 
+        trabajo de mecanicos automotrices profesionales y como esta conformado su area de trabajo, cuales son las herramientas que utilizan. Y tambien, se realiza una visita a EcoRecycling, 
+        donde podras ver las diferentes piezas de un auto y en donde podrias conseguir refacciones para realizar un cambio a tu automovil.
+        <br></p>
+
+        <div class="galeriaImagenes2">
+            <div class="Horizontal-Imagenes">
+                <div class="carousel">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-track">
+                        <img class="abrirModal" src="assets/imagenGaleria1.jpg" alt="Imagen 1">
+                        <img class="abrirModal" src="assets/imagenGaleria2.jpeg" alt="Imagen 2">
+                        <img class="abrirModal" src="assets/imagenGaleria3.jpg" alt="Imagen 3">
+                        <img class="abrirModal" src="assets/imagenGaleria4.jpeg" alt="Imagen 4">
+                        <img class="abrirModal" src="assets/imagenGaleria5.jpeg" alt="Imagen 5">
+                        <img class="abrirModal" src="assets/imagenGaleria6.jpeg" alt="Imagen 6">
+                        <img class="abrirModal" src="assets/imagenGaleria7.jpeg" alt="Imagen 7">
+                        <img class="abrirModal" src="assets/imagenGaleria8.jpeg" alt="Imagen 8">
+                        <img class="abrirModal" src="assets/imagenGaleria9.jpg" alt="Imagen 9">
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <!-- Galeria de videos horizontales-->
+        <div class="galeriaVideos2V">
+            <div class="Vertical-Videos">
+                <div class="carouselV">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-trackV">
+                        <video class="video" controls>
+                            <source src="assets/visitaNissan.mp4" type="video/mp4"> 
+                        </video>
+                        <video class="video" controls>
+                            <source src="assets/visitaEcoRecycling3.mp4" type="video/mp4"> 
+                        </video>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <!-- Galeria de videos verticales-->
+        <div class="galeriaVideos2H"></div>
+            <div class="Horizontal-Videos">
+                <div class="carouselH">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-trackH">
+                        <video class="video" controls>
+                            <source src="assets/visitaEcoRecycling1.mp4" type="video/mp4"> 
+                        </video>
+                        <video class="video" controls>
+                            <source src="assets/visitaEcoRecycling2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contenedor del modal -->
+        <div id="modal" class="modal">
+            <span class="cerrar">&times;</span>
+            <div class="modal-contenido">
+                <img id="modalImagen" src="" alt="Vista ampliada">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ubicacion -->
+    <section id="ubicacion">
+      <h2>Lugares donde se imparte el curso</h2>
+        <p><br>Estos son los lugares donde imparto clases entre semana y el fin de semana, esto con el fin de ayudar a las personas interesadas a encontrar un horario y dia que se acomode a sus preferencias.</p>
+
+        <div class="contenedorUbicaciones">
+            <div class="ubicacion-item">
+                <h3>Centro comunitario Villa del Sol III</h3>
+                <a href="https://maps.app.goo.gl/nkpTX11NE4FNNs949" target="-blank">
+                <img src="assets/cCVillaDelSol3.jpg" alt="Centro comunitario Villa del Sol III">
+                </a>
+                <p><span class="negritas">Ubicación:</span> Villa del Sol, III, 22205 Tijuana, B.C</p>
+                <p><span class="negritas">Horarios:</span> 9:00 AM - 12:00 PM, 1:00 PM - 4:00 PM</p>
+                <p><span class="negritas">Dia:</span> Sabado</p>
+                <p><i class="fa-solid fa-phone"></i> 664 316 75 69</p>
+            </div>
+            <div class="ubicacion-item">
+                <h3>Centro Deportivo y Recreativo La Lomita</h3>
+                <a href="https://maps.app.goo.gl/BuQeaRgumerJmJuS6" target="-blank">
+                <img src="assets/cDyRLaVillita.jpg" alt="Centro comunitario Villa del Sol III">
+                </a>
+                <p><span class="negritas">Ubicación:</span> Blvd. 2, Villafontana, Fontana XIII, 22205 Tijuana, B.C.</p>
+                <p><span class="negritas">Horarios:</span> 2:00 PM - 5:00 PM</p>
+                <p><span class="negritas">Dia:</span> Martes</p>
+                <p><i class="fa-solid fa-phone"></i> 664 419 74 54</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contacto">
+      <h2>Para mas información contactame</h2>
+
+        <div class="contenedorContactos">
+            <div class="contact-item"><i class="fa-solid fa-phone"></i> 664 547 47 64</div>
+            <div class="contact-item"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dsl_mecanica_automotriz/" target="_blank" rel="noopener noreferrer" class="instagram">@dsl_mecanica_automotriz</a></div>
+        
+        </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <p>&copy; 2026 David Sombra Luna, SDL</p>
+  </footer>
+
+</body>
+</html>
