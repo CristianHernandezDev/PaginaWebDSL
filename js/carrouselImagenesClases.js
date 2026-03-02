@@ -5,7 +5,7 @@ const nextBtnImgClase = document.querySelector('.carouselImagenesClases .next');
 
 let indexImgClase = 0;
 
-function updateCarouselImg() {
+function updateCarouselImgClase() {
   const slideWidth = trackImgClase.parentElement.offsetWidth;
   trackImgClase.style.transform = `translateX(-${indexImgClase * slideWidth}px)`;
 }
@@ -13,13 +13,13 @@ function updateCarouselImg() {
 nextBtnImgClase.addEventListener('click', () => {
   if (indexImgClase < imagesClase.length - 1) {
     indexImgClase++;
-    updateCarouselImg();
+    updateCarouselImgClase();
   }
 });
 
 prevBtnImgClase.addEventListener('click', () => {
   if (indexImgClase > 0) {
     indexImgClase--;
-    updateCarouselImg();
+    updateCarouselImgClase();
   }
 });

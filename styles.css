@@ -21,7 +21,7 @@ header img {
 /*Fuentes para los textos*/
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 6vw, 2.3rem);
+  font-size: clamp(1rem, 5vw, 2.3rem);
   font-weight: 700;
   color: #f4f4f4;
   letter-spacing: 1px; /* da un aire más elegante */
@@ -196,7 +196,7 @@ section {
   padding: 1rem;
   border-radius: 10px;
   font-size: clamp(0.6rem, 1.5vw, 0.9rem);
-  width: 200px;
+  width: 150px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: opacity 0.3s ease;
   z-index: 10;
@@ -383,6 +383,7 @@ section {
 
 .Horizontal-Imagenes {
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 
@@ -469,14 +470,24 @@ body.no-scroll {
 }
 
 .contenedorUbicaciones {
-  display:grid;
-  width: 70%; /* tamaño determinado */ 
-  margin: 0 auto; /* centra horizontalmente */
-  height: auto;
-  padding-top: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap:20px;
+  display: grid;
+  width: 100%;          /* ocupa todo el ancho en móviles */
+  max-width: 1200px;    /* límite en pantallas grandes */
+  margin: 0 auto;       /* centra horizontalmente */
+  padding: 2rem 1rem;   /* espacio interno adaptable */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
 }
+
+@media (max-width: 500px) {
+  .contenedorUbicaciones {
+    width: 95%;               /* casi todo el ancho */
+    grid-template-columns: 1fr; /* una sola columna */
+    padding: 1rem;
+  }
+}
+
 
 .ubicacion-item {
   display: grid;
