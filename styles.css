@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /*Encabezado*/
 header {
   display: flex;
@@ -7,6 +11,7 @@ header {
   padding: 1rem;
   background: #000000;
   height: 250px;
+  z-index: 1600;
 }
 
 header img {
@@ -54,8 +59,15 @@ body {
 }
 
 section {
-  padding: 2rem;
+  padding: 0 4rem 2rem 4rem;
 }
+
+@media (max-width: 500px) {
+  section {
+    padding: 2rem;
+  }
+}
+
 
 /*Menu de secciones*/
 .menu {
@@ -86,9 +98,11 @@ section {
 }
 
 /* Cuando se hace clic */ 
-.menu a:active { 
-  color: #ff5e00;
+.menu a.active {
+  color: #d0ff00;       /* color destacado */
+  font-weight: bold;    /* opcional: resaltar más */
 }
+
 
 /* botón hamburguesa oculto en pantallas grandes */
 .hamburger {
@@ -108,6 +122,18 @@ section {
     align-items: center;
   }
 
+  button, a {
+  -webkit-tap-highlight-color: transparent; /* elimina el cuadro azul */
+  }
+
+
+  /* Cancelar selección de elementos */
+  body {
+  -webkit-user-select: none; /* Safari/Chrome iOS */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* estándar */
+}
   /* mostrar botón hamburguesa */
   .hamburger {
     display: block;
@@ -133,7 +159,22 @@ section {
     display: flex;
   }
 }
+/*Efecto para selección de boton
+.transition-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #f4f4f4;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
 
+.transition-overlay.show {
+  opacity: 1; /* aparece un velo oscuro 
+}
+*/
 
 /*Sección de inicio*/
 #inicio {
@@ -144,7 +185,7 @@ section {
 #curso {
     position: relative;
     display: inline-block;
-    padding-bottom: 5rem;
+    padding-top: 3em;
 }
 
 .contenedorAuto {
@@ -210,14 +251,14 @@ section {
 }
 
 /** Posiciones de los labels **/
-.bateria {top: 35%; left: 24%;}
-.lubricacion {top: 45%; left: 23%;}
-.admision {top: 45%; left: 10%;}
-.radiador {top: 55%; left: 12%;}
-.suspension {top: 53%; left: 33%;}
-.frenos {top: 63%; left: 33%;}
-.neumatico {top: 70%; left: 38%;}
-.escape {top: 50%; left: 60%;}
+.bateria {top: 40%; left: 24%;}
+.lubricacion {top: 50%; left: 23%;}
+.admision {top: 50%; left: 10%;}
+.radiador {top: 60%; left: 12%;}
+.suspension {top: 60%; left: 33%;}
+.frenos {top: 70%; left: 33%;}
+.neumatico {top: 80%; left: 38%;}
+.escape {top: 60%; left: 60%;}
 
 .txtResaltado {
   padding-left: 2rem;
@@ -231,7 +272,7 @@ section {
 
 /*Seccion de galeria*/
 #galeria {
-    padding-bottom: 5rem;
+  padding-top: 3em;
 }
 
 /* Mostrar imagenes de clases */
@@ -315,11 +356,10 @@ section {
 .galeriaVideos1V {
   display: grid;
   grid-template-columns: 1fr; /* una columna completa */
-}
-
-.Vertical-VideosClases {
+  padding-top: 1rem;
   padding-bottom: 2rem
 }
+
 
 /*Galeria videos verticales de visitas*/
 /*Carrousel de videos verticales visitas*/
@@ -348,15 +388,11 @@ section {
 .galeriaVideos2V {
   display: grid;
   grid-template-columns: 1fr; /* una columna completa */
-}
-
-.galeriaVideos2V video {
   border-radius: 12px;
+  padding-bottom: 2rem;
 }
 
-.Vertical-Videos {
-  padding-bottom: 2rem
-}
+
 
 /* Para mostrar galeria de imagenes de visita */
 /*Carrousel de imagenes de visitas*/
@@ -425,6 +461,17 @@ button.prev, button.next {
 button.prev { left: 10px; z-index: 1200; }
 button.next { right: 10px; z-index: 1200; }
 
+/* --- versión móvil --- */
+@media (max-width: 500px) {
+  .carousel {
+    width: 100%;
+  }
+  .carouselH {
+    width: 100%;
+  }
+
+}
+
 /* Para visualizar imagen */
 .modal {
   display: none;              /* oculto por defecto */
@@ -450,6 +497,13 @@ button.next { right: 10px; z-index: 1200; }
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+@media (max-width: 500px) {
+  .modal-contenido img,
+  .modal-contenido video {
+    max-width: 80vw;
+  }
+}
+
 .cerrar {
   position: absolute;
   top: 20px;
@@ -466,15 +520,16 @@ body.no-scroll {
 
 /*Ubicación*/
 #ubicacion {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 3em;
 }
 
 .contenedorUbicaciones {
+  padding-top: 2em;
   display: grid;
   width: 100%;          /* ocupa todo el ancho en móviles */
   max-width: 1200px;    /* límite en pantallas grandes */
   margin: 0 auto;       /* centra horizontalmente */
-  padding: 2rem 1rem;   /* espacio interno adaptable */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   box-sizing: border-box;
@@ -487,7 +542,6 @@ body.no-scroll {
     padding: 1rem;
   }
 }
-
 
 .ubicacion-item {
   display: grid;
