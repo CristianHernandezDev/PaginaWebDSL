@@ -17,13 +17,13 @@
   <script src="js/reproducciónVideo.js" defer></script>
   <script src="js/menuSandwitch.js" defer></script>
   <script src="js/seleccionSeccion.js" defer></script>
-  <!--<script src="js/transiciónMenu.js" defer></script>-->
   <script src="js/nodal.js" defer></script>
     <!-- Carrouseles de imagenes y videos-->
   <script src="js/carrouselImagenesHorizontal.js" defer></script>
   <script src="js/carrouselVideosVerticales.js" defer></script>
   <script src="js/carrouselVideosVerticalesClases.js" defer></script>
   <script src="js/carrouselVideosHorizontalVisitas.js" defer></script>
+    <script src="js/carrouselVideosTestimonios.js" defer></script>
     <script src="js/carrouselImagenesClases.js" defer></script>
 
 </head>
@@ -52,7 +52,11 @@
   <main>
     <!-- Sección inicio -->
     <section id="inicio">
-      <h2>Bienvenido al mundo de la mecanica automotriz</h2>
+        <div class="info-inicio">
+            <img src="assets/iconoInicio.png" alt="icono inicio">
+        <h2>Bienvenido al mundo de la mecanica automotriz</h2>
+        </div>
+
       <p><br><br>Me presento, mucho gusto mi nombre es David Sombra Luna, mecánico automotriz con mas de 15 años de experiencia, ¿Estas interesado o interasada en saber como realizar un mantenimiento basico a tu automovil o quieres adentrarte en el basto mundo de la mecanica automotriz?
         Pues dejame decirte que estas en el lugar correcto. En esta pagina podras encontrar información acerca de un cursos que imparto personalmente, con horarios y dias accesibles para aprender con comodidad y a un precio economico.
         <br><br>Este es un proyecto personal que inicie en 2025 y 
@@ -61,7 +65,11 @@
 
     <!-- Sección información sobre curso -->
     <section id="curso">
-      <h2>Curso de Mécanica Basica Automotriz - Conoce un auto desde cero</h2>
+
+        <div class="info-curso">
+            <img src="assets/iconoCurso.png" alt="icono curso">
+                <h2>Curso de Mécanica Basica Automotriz - Conoce un auto desde cero</h2>
+        </div>
         <p><span class="negritas"><br>¿Quieres aprender cómo funciona tu automovil y realizar mantenimientos sencillos por tu cuenta o quieres enbarcarte en el mundo de la mecanica automotriz basica?</span>
         <br><br>En el curso de mecánica basica descubriras y aprenderas:
         <div class="txtResaltado">
@@ -80,7 +88,7 @@
             <span class="label bateria">
                 Batería
                 <span class="tooltip">
-                    Se encarga de transformar energía quimica en energia electrica.
+                    La<strong> bateria</strong> se encarga de transformar energía quimica en energia electrica.
                     <br><strong>Sistema al que pertenece:</strong> Eléctrico.
                 </span>
             </span>
@@ -88,7 +96,7 @@
             <span class="label admision">
                 S. Admisión
                 <span class="tooltip">
-                    Es el conjunto de elementos que permite la entrada de aire limpio al motor, regulando su cantidad y condiciones para la combustión.
+                    El<strong> sistema de admisión</strong> es el conjunto de elementos que permite la entrada de aire limpio al motor, regulando su cantidad y condiciones para la combustión.
                     <br><strong>Elementos:</strong> filtro de aire, cuerpo de aceleración, sensor de flujo de aire (MAF), multiple de admisión.
                 </span>
             </span>
@@ -96,7 +104,7 @@
             <span class="label lubricacion">
                 S. Lubricación
                 <span class="tooltip">
-                    Es el conjunto de componentes que distribuye aceite por el motor para reducir la fricción entre piezas metálicas, evitar el desgaste y mantener la temperatura adecuada.
+                    El<strong> sistema de lubricación</strong> es el conjunto de componentes que distribuye aceite por el motor para reducir la fricción entre piezas metálicas, evitar el desgaste y mantener la temperatura adecuada.
                     <br><strong>Elementos:</strong> bomba de aceite, filtro, cárter y conductos .
                 </span>
             </span>
@@ -104,7 +112,7 @@
             <span class="label suspension">
                 S. Suspensión
                 <span class="tooltip">
-                    Conjunto de componentes que mantienen la estabilidad y mejoran la comodidad de conducción, ademas de absorber impactos del camino.
+                    El<strong> sistema de suspensión</strong> conjunto de componentes que mantienen la estabilidad y mejoran la comodidad de conducción, ademas de absorber impactos del camino.
                     <br><strong>Elementos</strong> amortiguadores, resortes y brazos.
                 </span>
             </span>
@@ -112,7 +120,7 @@
             <span class="label radiador">
                 Radiador
                 <span class="tooltip">
-                    Disipa el calor del motor mediante el líquido refrigerante, evitando el sobrecalentamiento y asegurando un funcionamiento estable.
+                    El<strong> radiador</strong> disipa el calor del motor mediante el líquido refrigerante, evitando el sobrecalentamiento y asegurando un funcionamiento estable.
                     <br><strong>Sistema al que pertenece:</strong> Enfriamiento.
                 </span>
             </span>
@@ -120,7 +128,7 @@
             <span class="label frenos">
                 S. Frenos
                 <span class="tooltip">
-                    Es el mecanismo encargado de disminuir la velocidad o detener el vehículo. Funciona transformando la energía cinética en calor.  
+                    El<strong> sistema de freno</strong> es el mecanismo encargado de disminuir la velocidad o detener el vehículo. Funciona transformando la energía cinética en calor.  
                     <br><strong>Elementos:</strong> discos, pastillas, calipers, lineas de liquido de frenos.
                 </span>
             </span>
@@ -128,7 +136,7 @@
             <span class="label escape">
                 S. Escape
                 <span class="tooltip">
-                    Se encarga de conducir los gases quemados del motor hacia el exterior, reduciendo el ruido producido en la combustión y controlando las emisiones contaminantes.
+                    El<strong> sistema de escape</strong> se encarga de conducir los gases quemados del motor hacia el exterior, reduciendo el ruido producido en la combustión y controlando las emisiones contaminantes.
                 <br><strong>Elementos:</strong> resonador, silenciador, mofle, sensor de oxigeno, multiple de escape.
                 </span>
             </span>
@@ -136,7 +144,7 @@
             <span class="label neumatico">
                 Neumático
                 <span class="tooltip">
-                    Es parte esencial para el movimiento correcto de un auto.  
+                    El<strong> neumatico</strong> es parte esencial para el movimiento correcto de un auto.  
                     <br><strong>Sistema:</strong> Suspención y rodaje.
                 </span>
             </span>
@@ -146,8 +154,10 @@
 
     <!-- Sección galeria -->
     <section id="galeria">
-
-      <h2>Practicas en clase</h2>
+        <div class="info-clases">
+            <img src="assets/iconoClases.png" alt="icono clases">
+                <h2>Practicas en clase</h2>
+        </div>
         <p><br>Durante el curso, se realizan practicas en automoviles de compañeros o propios a consideración de los alumnos, esto con el fin de que los alumnos
         se atrevan de poco a poco a realizar mantenimiento y asi aprendan tanto lo teorico como practico, ademas de apoyar a los alumnos en el mantenimiento de su automovil.
         Todo esto diagnosticado y supervisado por un mecanico automotriz profesional con las medidas de seguridad necesarias.
@@ -253,6 +263,7 @@
             </div>
         </div>
 
+        <!-- Carrousel de imagenes de calses -->
         <div class="galeriaImagenes1">
             <div class="Imagenes-clases">
                 <div class="carouselImagenesClases">
@@ -272,12 +283,40 @@
             </div>
         </div>
 
-        <h2>Contamos con visitas a empresas</h2>
+        <!-- Carrousel de videos de testimonios -->
+        <div class="galeriaVideosTestimonios">
+            <div class="Vertical-VideosTestimonios">
+                <div class="carouselVTestimonios">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-trackVTestimonios">
+                        <div class="videoConTituloTestimonios">
+                            <h3>Testimonio de alumno Josimar</h3>
+                            <video class="video" controls>
+                                <source src="assets/TestinominioAlumnoJosimar.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videoConTituloTestimonios">
+                            <h3>Testimonio de alumno Brandon</h3>
+                            <video class="video" controls>
+                                <source src="assets/testimonioAlumnoBrandon.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-visita">
+            <img src="assets/iconoVisita.png" alt="icono visita">
+                <h2>Contamos con visitas a empresas</h2>
+        </div>
         <p><br>Durante el transcurso del curso, se realiza una visita a una empresa profesional con servicio de mantenimiento para autos donde podras ver de primera mano como es el 
         trabajo de mecanicos automotrices profesionales y como esta conformado su area de trabajo, cuales son las herramientas que utilizan. Y tambien, se realiza una visita a EcoRecycling, 
         donde podras ver las diferentes piezas de un auto y en donde podrias conseguir refacciones para realizar un cambio a tu automovil.
         <br></p>
 
+        <!-- Carrousel de imagenes de visitas -->
         <div class="galeriaImagenes2">
             <div class="Horizontal-Imagenes">
                 <div class="carousel">
@@ -297,7 +336,7 @@
                 </div>
             </div>
         </div>
-        <!-- Galeria de videos horizontales-->
+        <!-- Galeria de videos de visitas verticales-->
         <div class="galeriaVideos2V">
             <div class="Vertical-Videos">
                 <div class="carouselV">
@@ -314,7 +353,7 @@
                 </div>
             </div>
         </div>
-        <!-- Galeria de videos verticales-->
+        <!-- Galeria de videos verticales horizontales-->
         <div class="galeriaVideos2H"></div>
             <div class="Horizontal-Videos">
                 <div class="carouselH">
@@ -333,7 +372,7 @@
         </div>
 
 
-        <!-- Contenedor del modal -->
+        <!-- Contenedor del modal para ver imagenes -->
         <div id="modal" class="modal">
             <span class="cerrar">&times;</span>
             <div class="modal-contenido">
@@ -344,7 +383,10 @@
 
     <!-- Sección ubicacion -->
     <section id="ubicacion">
-      <h2>Lugares donde se imparte el curso</h2>
+        <div class="info-ubicacion">
+            <img src="assets/iconoUbicacion.png" alt="icono ubicacion">
+                <h2>Lugares donde se imparte el curso</h2>
+        </div>
         <p><br>Estos son los lugares donde imparto clases entre semana y el fin de semana, esto con el fin de ayudar a las personas interesadas a encontrar un horario y dia que se acomode a sus preferencias.</p>
 
         <div class="contenedorUbicaciones">
@@ -372,8 +414,13 @@
         
     </section>
 
+    <!-- Sección contacto -->
+
     <section id="contacto">
-      <h2>Para mas información contactame</h2>
+        <div class="info-contacto">
+            <img src="assets/iconoTelefono.png" alt="icono contacto">
+                <h2>Para más información contáctame</h2>
+        </div>
 
         <div class="contenedorContactos">
             <div class="contact-item"><i class="fa-solid fa-phone"></i> 664 547 47 64</div>
@@ -385,7 +432,7 @@
 
   </main>
   <footer>
-    <p>&copy; 2026 David Sombra Luna, SDL</p>
+    <p>&copy; 2026 David Sombra Luna, DSL</p>
   </footer>
 
 </body>
