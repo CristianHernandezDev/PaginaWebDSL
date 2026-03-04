@@ -679,6 +679,11 @@ body.no-scroll {
   border-radius: 6px;
 }
 
+.whatsapp img {
+  width: 20px;
+  height: 20px;
+}
+
 .instagram {
   text-decoration: none;
   color: #303ac2;
