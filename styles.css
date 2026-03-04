@@ -295,7 +295,8 @@ section {
 .info-visita {
   display: flex;
   align-items: center;   /* centra verticalmente ícono y texto */
-  gap: 1rem;             /* espacio entre ellos */
+  gap: 1rem;   
+  padding-top: 2rem ;
 }
 
 .info-visita img {
