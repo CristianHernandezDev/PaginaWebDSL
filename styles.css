@@ -479,7 +479,7 @@ section {
 
 .carousel-track {
   display: flex;          /* imágenes lado a lado */
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
 .carousel-track img {
@@ -620,11 +620,24 @@ body.no-scroll {
 }
 
 @media (max-width: 500px) {
-  .contenedorUbicaciones {
+.contenedorUbicaciones {
     width: 95%;               /* casi todo el ancho */
     grid-template-columns: 1fr; /* una sola columna */
     padding: 1rem;
   }
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 }
 
 .ubicacion-item {
@@ -679,9 +692,19 @@ body.no-scroll {
   border-radius: 6px;
 }
 
-
-.instagram {
-  text-decoration: none;
-  color: #303ac2;
-  font-weight: bold;
+a img {
+  border: none;          /* elimina cualquier borde por defecto */
+  display: inline-block; /* asegura que se comporte bien en flex/inline */
+  transition: transform 0.2s ease; /* animación suave */
 }
+
+a img:hover {
+  transform: scale(1.1); /* efecto zoom al pasar el mouse */
+}
+
+.enlace-animacion {
+  color: #1247bb;        /* cambia el color del texto */
+  text-decoration: none; /* quita la línea subrayada */
+  font-weight: bold;     /* opcional: hacerlo más destacado */
+}
+
