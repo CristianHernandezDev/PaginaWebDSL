@@ -484,9 +484,9 @@ section {
 
 .carousel-track img {
   width: 100%;          /* ocupa todo el ancho del carrusel */
-  height: auto;         /* mantiene proporción original */
+  height: 300px;
   flex-shrink: 0;       /* evita que se encoja */
-  object-fit: cover;    /* llena el espacio sin deformarse */
+  object-fit: contain;    /* llena el espacio sin deformarse */
 }
 
 .Horizontal-Imagenes {
@@ -550,7 +550,7 @@ button.next { right: 10px; z-index: 1200; }
   position: fixed;
   inset: 0;                   /* ocupa toda la pantalla */
   background-color: rgba(0,0,0,0.8);
-  z-index: 1200;          /* Flexbox */
+  z-index: 1500;          /* Flexbox */
   justify-content: center;    /* centra horizontal */
   align-items: center;        /* centra vertical */
 }
