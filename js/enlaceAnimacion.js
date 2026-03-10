@@ -10,3 +10,8 @@ document.querySelectorAll('.enlace-animacion').forEach(enlace => {
     }, 500); // mismo tiempo que el transition en CSS
   });
 });
+
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
+
