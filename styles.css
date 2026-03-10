@@ -21,6 +21,7 @@ header img {
 .logo img {
   height: 300px;   /* ajusta la altura */
   width: auto;    /* mantiene proporción */
+  border-radius: 100px;
 }
 
 /*Fuentes para los textos*/
