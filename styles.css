@@ -608,16 +608,15 @@ body.no-scroll {
   height: 70px;
 }
 
-
 .contenedorUbicaciones {
-  padding-top: 2em;
-  display: grid;
-  width: 100%;          /* ocupa todo el ancho en móviles */
-  max-width: 1200px;    /* límite en pantallas grandes */
-  margin: 0 auto;       /* centra horizontalmente */
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  box-sizing: border-box;
+    padding-top: 2rem;
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr); /* exactamente 2 columnas */
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 500px) {
@@ -642,9 +641,8 @@ body.no-scroll {
 .ubicacion-item img {
   width: 70%;   /* tamaño determinado */
   height: auto;
-  border-radius: 6px;
+  border-radius: 10px;
 }
-
 
 #contacto {
   text-align: center;
