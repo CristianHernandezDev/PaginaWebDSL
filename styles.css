@@ -703,3 +703,9 @@ a img:hover {
   text-decoration: none; /* quita la línea subrayada */
   font-weight: bold;     /* opcional: hacerlo más destacado */
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
